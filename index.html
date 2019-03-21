@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Zurich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
 		section {
 		  display: flex;
 		  justify-content: center;
-		}
-		.social img {
-			height: 50px;
-		}
-		a {
-			text-decoration: none;
 		}
 		.social {
 			display: flex;
 			width: 50%;
 			justify-content: space-evenly;
 		}
+		.social img {
+			height: 50px;
+		}
+		@media all and (max-width: 839px) {
+			.social { width: 100%; }
+		}
 	</style>
   </head>
   <body>
 
-	<section class="logo">
+	<section>
 		<img src="images/logo.jpg" alt="Angular Zurich logo">
 	</section>
 
