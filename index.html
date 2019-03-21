@@ -3,17 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Zurich</title>
-  </head>
-  <body>
-	<style type="text/css">
-		.container{
-		  display: grid;
-		  align-items: center;
+    <style type="text/css">
+		section {
+		  display: flex;
 		  justify-content: center;
 		}
+		.social img {
+			height: 50px;
+		}
+		a {
+			text-decoration: none;
+		}
+		.social {
+			display: flex;
+			width: 50%;
+			justify-content: space-evenly;
+		}
 	</style>
-  	<div class="container">
-  		<img src="images/logo.jpg" alt="Angular Zurich logo">
-	</div>
+  </head>
+  <body>
+
+	<section class="logo">
+		<img src="images/logo.jpg" alt="Angular Zurich logo">
+	</section>
+
+	<section>
+		<div class="social">
+			<a href="https://www.youtube.com/channel/UC3dvhlLD9QsFwe3H0HrFJLg" target="_blank">
+				<img src="images/youtube.svg" alt="YouTube logo">
+			</a>
+			<a href="https://twitter.com/AngularZurich" target="_blank">
+				<img src="images/twitter.svg" alt="Twitter logo">
+			</a>
+			<a href="https://angularzurich.slack.com/" target="_blank">
+				<img src="images/slack.svg" alt="Slack logo">
+			</a>
+			<a href="https://www.instagram.com/angularzrh/" target="_blank">
+				<img src="images/instagram.svg" alt="Instagram logo">
+			</a>
+			<a href="https://www.meetup.com/AngularZRH/" target="_blank">
+				<img src="images/meetup.svg" alt="Meetup logo">
+			</a>
+		</div>
+	</section>
   </body>
 </html>
