@@ -50,6 +50,7 @@ section {
     align-items: center;
     flex-direction: column;
     margin: 0 0 50px 0;
+    text-align: center;
 }
 
 .logo {
