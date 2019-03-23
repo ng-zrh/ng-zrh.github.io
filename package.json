@@ -1,0 +1,19 @@
+{
+  "name": "ng-zrh.github.io",
+  "version": "1.0.0",
+  "description": "Anglar Zurich Meetup",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-zrh/ng-zrh.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng-zrh/ng-zrh.github.io/issues"
+  },
+  "homepage": "https://github.com/ng-zrh/ng-zrh.github.io#readme",
+  "dependencies": {
+    "prettier": "^1.16.4"
+  }
+}

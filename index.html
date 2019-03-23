@@ -2,50 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Angular Zurich</title>
+    <title>Angular Meetup Zurich - The best Swiss Angular community!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-		section {
-		  display: flex;
-		  justify-content: center;
-		}
-		.social {
-			display: flex;
-			width: 50%;
-			justify-content: space-evenly;
-		}
-		.social img {
-			height: 50px;
-		}
-		@media all and (max-width: 839px) {
-			.social { width: 100%; }
-		}
-	</style>
+    <link rel="stylesheet" href="src/styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400" />
   </head>
   <body>
 
-	<section>
-		<img src="images/logo.jpg" alt="Angular Zurich logo">
-	</section>
+    <main>
+        <section>
+            <img src="src/assets/images/logo.jpg" class="logo" alt="Angular Meetup Zurich logo">
+        </section>
 
-	<section>
-		<div class="social">
-			<a href="https://www.youtube.com/channel/UC3dvhlLD9QsFwe3H0HrFJLg" target="_blank">
-				<img src="images/youtube.svg" alt="YouTube logo">
-			</a>
-			<a href="https://twitter.com/AngularZurich" target="_blank">
-				<img src="images/twitter.svg" alt="Twitter logo">
-			</a>
-			<a href="https://angularzurich.slack.com/" target="_blank">
-				<img src="images/slack.svg" alt="Slack logo">
-			</a>
-			<a href="https://www.instagram.com/angularzrh/" target="_blank">
-				<img src="images/instagram.svg" alt="Instagram logo">
-			</a>
-			<a href="https://www.meetup.com/AngularZRH/" target="_blank">
-				<img src="images/meetup.svg" alt="Meetup logo">
-			</a>
-		</div>
-	</section>
+        <section>
+            <h2>Join as on your favourite social platform!</h2>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UC3dvhlLD9QsFwe3H0HrFJLg" target="_blank">
+                    <img src="src/assets/images/youtube.svg" alt="YouTube logo">
+                </a>
+                <a href="https://twitter.com/AngularZurich" target="_blank">
+                    <img src="src/assets/images/twitter.svg" alt="Twitter logo">
+                </a>
+                <a href="https://angularzurich.slack.com/" target="_blank">
+                    <img src="src/assets/images/slack.svg" alt="Slack logo">
+                </a>
+                <a href="https://www.instagram.com/angularzrh/" target="_blank">
+                    <img src="src/assets/images/instagram.svg" alt="Instagram logo">
+                </a>
+                <a href="https://www.meetup.com/AngularZRH/" target="_blank">
+                    <img src="src/assets/images/meetup.svg" alt="Meetup logo">
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Check out our latest talks!</h2>
+            <div class="videos">
+                <iframe class="video" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Angular Meetup Zurich by
+            <a href="https://twitter.com/GionKunz" target="_blank">Carlos Morales</a>,
+            <a href="https://twitter.com/crlsmrls_" target="_blank">Gion Kunz</a> &
+            <a href="https://twitter.com/tomastrajan" target="_blank">Tomas Trajan</a>
+        </p>
+    </footer>
+
+    <script src="src/app/app.js"></script>
   </body>
 </html>
