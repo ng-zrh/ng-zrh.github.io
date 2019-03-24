@@ -15,7 +15,7 @@ function initializeVideos() {
             const id = link.split('=')[1];
             node.setAttribute(
                 'src',
-                `https://youtube.com/embed/${id}?controls=0&autoplay=1`
+                `https://youtube.com/embed/${id}`
             );
         });
   }
