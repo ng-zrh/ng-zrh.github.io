@@ -9,21 +9,48 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h3 a {
     font-family: 'Staatliches', sans-serif;
     margin: 0 0 10px 0;
 }
 
 a,
 p,
+blockquote,
 li {
     font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    text-align: left;
+    list-style-position: inside;
+}
+ul li {
+    text-align: left;
+    padding: 5px 0;
+}
+
+blockquote {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 40px;
+    border-left: 2px solid #000;
+    text-align: left;
 }
 
 a {
     color: #126faa;
     font-weight: 400;
     text-decoration: none;
+    position: relative;
+}
+a:hover {
+    color: #1292db;
+}
+a:active {
+    top: 2px;
 }
 
 h2 {
@@ -49,7 +76,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 0 50px 0;
+    margin: 0 0 70px 0;
     text-align: center;
 }
 
@@ -82,6 +109,26 @@ section {
     flex-wrap: wrap;
 }
 
+.columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns blockquote {
+    width: 50%;
+}
+
+.columns > div {
+    width: 50%;
+    padding: 50px;
+}
+
+.columns > div > * {
+    text-align: left;
+}
+
+
 .videos .video {
     width: 400px;
     height: 220px;
@@ -98,5 +145,25 @@ footer {
 @media all and (max-width: 839px) {
     .social img {
         padding: 20px 5px;
+    }
+
+    .columns {
+        flex-wrap: wrap;
+    }
+
+    .columns blockquote {
+        width: 100%;
+        margin: 10px 40px;
+    }
+
+    .columns > div {
+        width: 100%;
+        padding: 20px 50px;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .columns {
+        padding: 0 20%;
     }
 }
