@@ -1,3 +1,4 @@
+resolveDates();
 initializeVideos();
 
 function initializeVideos() {
@@ -19,4 +20,58 @@ function initializeVideos() {
             );
         });
   }
+}
+
+function resolveDates() {
+  const now = Date.now();
+  const dates = [
+    {
+      date: new Date(2019, 2, 20),
+      booked: true
+    },
+    {
+      date: new Date(2019, 4, 15),
+      booked: true,
+      info: 'Migrating a large enterprise AngularJS codebases to Angular by Christian Kohler'
+    },
+    {
+      date: new Date(2019, 5, 12),
+      booked: false
+    },
+    {
+      date: new Date(2019, 6, 24),
+      booked: false
+    },
+    {
+      date: new Date(2019, 7, 14),
+      booked: false
+    },
+    {
+      date: new Date(2019, 8, 18),
+      booked: false
+    },
+    {
+      date: new Date(2019, 9, 23),
+      booked: false
+    },
+    {
+      date: new Date(2019, 10, 13),
+      booked: false
+    },
+    {
+      date: new Date(2019, 11, 4),
+      booked: false
+    },
+  ];
+
+  const upcomingDates = dates.filter(d => d.date > now);
+  const upcomingDatesTpl = upcomingDates.map(d => {
+    const day = d.date.getDate().toString().padStart(2, '0');
+    const month = (d.date.getMonth() + 1).toString().padStart(2, '0');
+    const year = d.date.getFullYear();
+    return `<p>${day}. ${month}. ${year} ${d.booked ? '✅' : ''}${d.info ? ` - ${d.info}` : ''}</p>`
+  }).join('\n');
+
+  const dates$ = document.querySelector('#dates');
+  dates$.innerHTML = upcomingDatesTpl;
 }

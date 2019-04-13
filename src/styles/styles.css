@@ -128,6 +128,10 @@ section {
     text-align: left;
 }
 
+#dates p {
+    padding: 10px;
+}
+
 
 .videos .video {
     width: 400px;
