@@ -32,7 +32,7 @@ function resolveDates() {
     {
       date: new Date(2019, 4, 15),
       booked: true,
-      info: 'Migrating a large enterprise AngularJS codebases to Angular by Christian Kohler'
+      info: 'Migrating large enterprise AngularJS codebases to Angular by Christian Kohler'
     },
     {
       date: new Date(2019, 5, 12),
