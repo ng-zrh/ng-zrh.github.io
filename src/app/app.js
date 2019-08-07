@@ -45,8 +45,8 @@ function resolveDates() {
     },
     {
       date: new Date(2019, 7, 14),
-      booked: false,
-      info: 'Three Angular related ⚡ Lightning talks!'
+      booked: true,
+      info: 'Angular Summer Mix - Three ⚡ Lightning talks!'
     },
     {
       date: new Date(2019, 8, 18),
