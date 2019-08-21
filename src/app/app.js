@@ -26,31 +26,9 @@ function resolveDates() {
   const now = Date.now();
   const dates = [
     {
-      date: new Date(2019, 2, 20),
-      booked: true
-    },
-    {
-      date: new Date(2019, 4, 15),
-      booked: true,
-      info: 'Migrating large enterprise AngularJS codebases to Angular by Christian Kohler'
-    },
-    {
-      date: new Date(2019, 5, 12),
-      booked: false
-    },
-    {
-      date: new Date(2019, 6, 25),
+      date: new Date(2019, 8, 25),
       booked: false,
-      info: 'PWA with Angular by Raphael Ritter'
-    },
-    {
-      date: new Date(2019, 7, 14),
-      booked: true,
-      info: 'Angular Summer Mix - Three ⚡ Lightning talks!'
-    },
-    {
-      date: new Date(2019, 8, 18),
-      booked: false
+      info: ''
     },
     {
       date: new Date(2019, 9, 23),
