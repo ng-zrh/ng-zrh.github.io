@@ -28,7 +28,7 @@ function resolveDates() {
     {
       date: new Date(2019, 8, 25),
       booked: false,
-      info: ''
+      info: 'How to generate Angular REST Clients with OpenAPI Generator'
     },
     {
       date: new Date(2019, 9, 23),
