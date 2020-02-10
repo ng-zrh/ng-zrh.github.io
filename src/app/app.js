@@ -43,7 +43,7 @@ function resolveDates() {
       booked: false
     },
     {
-      date: new Date(2020, 3, 11),
+      date: new Date(2020, 2, 11),
       booked: true,
       info: 'Managing Angular Libraries by Erin Zimmer'
     },
