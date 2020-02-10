@@ -5,7 +5,7 @@ function initializeVideos() {
   const CHANNEL_ID = 'UC3dvhlLD9QsFwe3H0HrFJLg';
   const CHANNEL_URL = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`);
   const url = `https://api.rss2json.com/v1/api.json?rss_url=${CHANNEL_URL}`;
-  
+
   document.querySelectorAll('.video').forEach((node, index) => loadVideo(node, url, index));
 
   function loadVideo(node, url, index){
@@ -41,6 +41,11 @@ function resolveDates() {
     {
       date: new Date(2019, 11, 4),
       booked: false
+    },
+    {
+      date: new Date(2020, 3, 11),
+      booked: true,
+      info: 'Managing Angular Libraries by Erin Zimmer'
     },
   ];
 
