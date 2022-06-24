@@ -141,6 +141,23 @@ section {
     transition: all 500ms;
 }
 
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners > * {
+    height: 64px;
+    margin: 10px;
+}
+
+.partners img {
+    width: auto;
+    height: 100%;
+}
+
 footer {
     background-color: #ededed;
     padding: 20px;
